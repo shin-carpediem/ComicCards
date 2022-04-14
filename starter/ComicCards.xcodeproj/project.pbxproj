@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0B879C3E2807F47E0045825F /* Marvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B879C3D2807F47E0045825F /* Marvel.swift */; };
-		3A1073D67C6B19EFFAACF9C2 /* Pods_ComicCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DFA27A0B388961C8792A77 /* Pods_ComicCards.framework */; };
+		0B879C42280812780045825F /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0B879C41280812780045825F /* Moya */; };
+		0B879C45280813080045825F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0B879C44280813080045825F /* Kingfisher */; };
 		5C2901831F8F6DE700803663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2901821F8F6DE700803663 /* LaunchScreen.storyboard */; };
 		7808ECB020879B320042B134 /* CoolStoryregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7808ECAF20879B320042B134 /* CoolStoryregular.ttf */; };
 		7808ECB220879FEB0042B134 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7808ECB120879FEB0042B134 /* CardViewController.swift */; };
@@ -27,10 +28,7 @@
 
 /* Begin PBXFileReference section */
 		0B879C3D2807F47E0045825F /* Marvel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel.swift; sourceTree = "<group>"; };
-		18DFA27A0B388961C8792A77 /* Pods_ComicCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComicCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		193BF8E93A4464BB845F6D29 /* Pods-ComicCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComicCards/Pods-ComicCards.release.xcconfig"; sourceTree = "<group>"; };
 		5C2901821F8F6DE700803663 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		770CA965231DFDB1C3D995A9 /* Pods-ComicCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComicCards/Pods-ComicCards.debug.xcconfig"; sourceTree = "<group>"; };
 		7808ECAF20879B320042B134 /* CoolStoryregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoolStoryregular.ttf; sourceTree = "<group>"; };
 		7808ECB120879FEB0042B134 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		7808ECB520888D400042B134 /* UploadResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadResult.swift; sourceTree = "<group>"; };
@@ -54,26 +52,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A1073D67C6B19EFFAACF9C2 /* Pods_ComicCards.framework in Frameworks */,
+				0B879C45280813080045825F /* Kingfisher in Frameworks */,
+				0B879C42280812780045825F /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17E2FCE120771B4C83FB2972 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				770CA965231DFDB1C3D995A9 /* Pods-ComicCards.debug.xcconfig */,
-				193BF8E93A4464BB845F6D29 /* Pods-ComicCards.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		6597CA2C1B74684A9004BED4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				18DFA27A0B388961C8792A77 /* Pods_ComicCards.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,7 +132,6 @@
 			children = (
 				D2A5F2021F4A9144005CD714 /* ComicCards */,
 				D2A5F2011F4A9144005CD714 /* Products */,
-				17E2FCE120771B4C83FB2972 /* Pods */,
 				6597CA2C1B74684A9004BED4 /* Frameworks */,
 			);
 			indentWidth = 2;
@@ -177,17 +165,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2A5F2121F4A9144005CD714 /* Build configuration list for PBXNativeTarget "ComicCards" */;
 			buildPhases = (
-				57FFE33CB4F8DDB3378FA82C /* [CP] Check Pods Manifest.lock */,
 				D2A5F1FC1F4A9144005CD714 /* Sources */,
 				D2A5F1FD1F4A9144005CD714 /* Frameworks */,
 				D2A5F1FE1F4A9144005CD714 /* Resources */,
-				715EEFFFFA7BCACE24A11587 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ComicCards;
+			packageProductDependencies = (
+				0B879C41280812780045825F /* Moya */,
+				0B879C44280813080045825F /* Kingfisher */,
+			);
 			productName = MyRWTutorial;
 			productReference = D2A5F2001F4A9144005CD714 /* ComicCards.app */;
 			productType = "com.apple.product-type.application";
@@ -199,7 +189,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = Razeware;
 				TargetAttributes = {
 					D2A5F1FF1F4A9144005CD714 = {
@@ -217,6 +207,10 @@
 				Base,
 			);
 			mainGroup = D2A5F1F71F4A9143005CD714;
+			packageReferences = (
+				0B879C40280812780045825F /* XCRemoteSwiftPackageReference "Moya" */,
+				0B879C43280813070045825F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D2A5F2011F4A9144005CD714 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -239,51 +233,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		57FFE33CB4F8DDB3378FA82C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ComicCards-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		715EEFFFFA7BCACE24A11587 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ComicCards/Pods-ComicCards-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ComicCards/Pods-ComicCards-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2A5F1FC1F4A9144005CD714 /* Sources */ = {
@@ -343,6 +292,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -368,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,6 +352,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -421,43 +372,48 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		D2A5F2131F4A9144005CD714 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 770CA965231DFDB1C3D995A9 /* Pods-ComicCards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ComicCards/Common/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.ComicCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = ComicCards/Common/Bridging.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D2A5F2141F4A9144005CD714 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 193BF8E93A4464BB845F6D29 /* Pods-ComicCards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ComicCards/Common/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.ComicCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = ComicCards/Common/Bridging.h;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -484,6 +440,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B879C40280812780045825F /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		0B879C43280813070045825F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B879C41280812780045825F /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B879C40280812780045825F /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		0B879C44280813080045825F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B879C43280813070045825F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2A5F1F81F4A9143005CD714 /* Project object */;
 }

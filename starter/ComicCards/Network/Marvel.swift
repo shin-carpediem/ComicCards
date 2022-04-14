@@ -1,3 +1,4 @@
+import Foundation
 import Moya
 
 /// APIひとつに対して1つ、以下のような仕様書を作る
@@ -37,7 +38,7 @@ extension Marvel: TargetType {
   
   // 5
   public var task: Task {
-    let ts = "\(Date().timeIntervalSince1970"
+    let ts = "\(Date().timeIntervalSince1970)"
     // 1
     let hash = (ts + Marvel.privateKey + Marvel.publicKey).md5
     

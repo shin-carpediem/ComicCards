@@ -5,29 +5,6 @@ class ComicsViewController: UIViewController {
   /// 新しいMarvelターゲットを使用するMoyaProviderのインスタンスを作成
   let provider = MoyaProvider<Marvel>()
   
-  // 1
-  var state = .loading
-  
-  // 2
-  provider.request(.comics) {
-    [weak self] result in
-    guard let self = self else { return }
-    
-    // 3
-    switch result {
-    case .success(let response):
-      do {
-        // 4
-        print(try response.mapJSON())
-      } catch {
-        self.state = .error
-      }
-    case .failure:
-      // 5
-      self.state = .error
-    }
-  }
-
   // MARK: - View State
   private var state: State = .loading {
     didSet {
