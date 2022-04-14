@@ -1,5 +1,6 @@
 import Moya
 
+/// APIひとつに対して1つ、以下のような仕様書を作る
 public enum Marvel {
   // 1
   static private let publicKey = "c04329be99f9f97c89cad0d24e92e0fd" // PUBLIC_KEY

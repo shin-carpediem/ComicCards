@@ -6,7 +6,7 @@ class ComicsViewController: UIViewController {
   let provider = MoyaProvider<Marvel>()
   
   // 1
-  state = .loading
+  var state = .loading
   
   // 2
   provider.request(.comics) {
@@ -19,7 +19,12 @@ class ComicsViewController: UIViewController {
       do {
         // 4
         print(try response.mapJSON())
+      } catch {
+        self.state = .error
       }
+    case .failure:
+      // 5
+      self.state = .error
     }
   }
 
